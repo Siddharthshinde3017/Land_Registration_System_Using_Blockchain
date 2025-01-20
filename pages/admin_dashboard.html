@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="../css/admin_dashboard.css">
+  <script defer src="../javascript/admin_dashboard.js"></script>
+</head>
+<body>
+
+  <!-- Sidebar Navigation -->
+  <aside class="sidebar">
+    <h2>Admin Panel</h2>
+    <ul>
+      <li><a href="#dashboa/rd">Dashboard</a></li>
+      <li><a href="#users">User Management</a></li>
+      <li><a href="#land-approvals">Land Approvals</a></li>
+      <li><a href="#transactions">Transactions</a></li>
+      <li><a href="#disputes">Dispute Resolution</a></li>
+      <li><a href="#reports">Reports & Analytics</a></li>
+      <li><a href="#security">Security Logs</a></li>
+      <li><a href="#settings">Settings</a></li>
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="content">
+    
+    <!-- Dashboard Overview -->
+    <section id="dashboard">
+      <h1>Admin Dashboard</h1>
+      <div class="dashboard-stats">
+        <div class="stat-box"><h2 id="total-users">0</h2><p>Total Users</p></div>
+        <div class="stat-box"><h2 id="total-lands">0</h2><p>Total Lands</p></div>
+        <div class="stat-box"><h2 id="pending-approvals">0</h2><p>Pending Approvals</p></div>
+        <div class="stat-box"><h2 id="disputes">0</h2><p>Open Disputes</p></div>
+      </div>
+    </section>
+
+    <!-- User Management -->
+    <section id="users">
+      <h2>User Management</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Username</th>
+            <th>Role</th>
+            <th>Email</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="user-table">
+          <!-- User data will be populated dynamically -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Land Approvals -->
+    <section id="land-approvals">
+      <h2>Pending Land Approvals</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Land ID</th>
+            <th>Owner</th>
+            <th>Location</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="land-approval-table">
+          <!-- Pending land requests will be loaded here -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Transactions -->
+    <section id="transactions">
+      <h2>Transactions</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Transaction ID</th>
+            <th>Buyer</th>
+            <th>Seller</th>
+            <th>Amount</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="transaction-table">
+          <!-- Transactions will be displayed dynamically -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Dispute Resolution -->
+    <section id="disputes">
+      <h2>Dispute Resolution</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Dispute ID</th>
+            <th>Land ID</th>
+            <th>Issue</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="dispute-table">
+          <!-- Disputes will be loaded dynamically -->
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  body {
+    background: #f9fafb;
+    color: #333;
+  }
+  
+  header {
+    background: #2d4059;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  header .logo span {
+    color: #ea5455;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    color: #ffd460;
+  }
+  
+  .gallery-header {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f1faee;
+  }
+  
+  .gallery-header h1 {
+    font-size: 2rem;
+    color: #2d4059;
+  }
+  
+  .gallery-header p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .land-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .land-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .land-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .land-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .land-card-content {
+    padding: 15px;
+  }
+  
+  .land-card-content h3 {
+    font-size: 1.2rem;
+    color: #2d4059;
+    margin-bottom: 10px;
+  }
+  
+  .land-card-content p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .land-card-content button {
+    background: #2d4059;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .land-card-content button:hover {
+    background: #ea5455;
+  }
+  
+  .footer {
+    background: #2d4059;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  

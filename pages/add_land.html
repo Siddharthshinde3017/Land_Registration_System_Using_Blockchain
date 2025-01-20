@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add New Land</title>
+  <link rel="stylesheet" href="../css/Add_land.css">
+  <script defer src="../javascript/Add_land.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">Land <span>Registry</span></div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="gallery.html">Land Gallery</a></li>
+        <li><a href="Add_land.html">Add Land</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="form-container">
+      <h1>Add New Land</h1>
+      <form id="add-land-form">
+        
+        <!-- Basic Land Information -->
+        <label for="land-title">Land Title:</label>
+        <input type="text" id="land-title" placeholder="Enter Land Title" required>
+
+        <label for="land-size">Land Size (sq.ft.):</label>
+        <input type="number" id="land-size" placeholder="Enter Size" required>
+
+        <label for="land-location">Location:</label>
+        <input type="text" id="land-location" placeholder="Enter Location" required>
+
+        <label for="land-type">Land Type:</label>
+        <select id="land-type">
+          <option value="residential">Residential</option>
+          <option value="commercial">Commercial</option>
+          <option value="agricultural">Agricultural</option>
+          <option value="industrial">Industrial</option>
+        </select>
+
+        <label for="land-price">Price ($):</label>
+        <input type="number" id="land-price" placeholder="Enter Price (optional)">
+
+        <!-- Owner Details -->
+        <h2>Owner Details</h2>
+        <label for="owner-name">Owner Name:</label>
+        <input type="text" id="owner-name" placeholder="Enter Owner Name" required>
+
+        <label for="owner-contact">Owner Contact:</label>
+        <input type="text" id="owner-contact" placeholder="Enter Contact Details" required>
+
+        <!-- Document Upload -->
+        <h2>Upload Documents</h2>
+        <label for="title-deed">Title Deed:</label>
+        <input type="file" id="title-deed" accept=".pdf,.jpg,.png" required>
+
+        <label for="tax-receipt">Tax Receipt:</label>
+        <input type="file" id="tax-receipt" accept=".pdf,.jpg,.png" required>
+
+        <!-- Image Upload -->
+        <h2>Upload Land Images</h2>
+        <input type="file" id="land-images" accept="image/*" multiple required>
+
+        <!-- Google Map -->
+        <h2>Select Land Location</h2>
+        <div id="map"></div>
+        <input type="hidden" id="latitude">
+        <input type="hidden" id="longitude">
+
+        <!-- Terms & Submit -->
+        <div class="terms">
+          <input type="checkbox" id="terms" required>
+          <label for="terms">I confirm that the provided information is accurate and legally valid.</label>
+        </div>
+
+        <div class="buttons">
+          <button type="button" onclick="previewLand()">Preview</button>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 Land Registry. All rights reserved.</p>
+  </footer>
+
+  <!-- Google Maps API -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</body>
+</html>

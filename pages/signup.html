@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="../css/signup.css">
+  <script defer src="../javascript/signup.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">Land <span>Registry</span></div>
+  </header>
+
+  <main>
+    <section class="signup-container">
+      <h1>Create a New Account</h1>
+      <form id="signup-form">
+        
+        <!-- User Role Selection -->
+        <label for="role">Select Role:</label>
+        <select id="role" required>
+          <option value="">Choose Role</option>
+          <option value="buyer">Buyer</option>
+          <option value="seller">Seller</option>
+          <option value="inspector">Land Inspector</option>
+        </select>
+
+        <!-- User Details -->
+        <label for="username">Username:</label>
+        <input type="text" id="username" placeholder="Enter Username" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter Email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter Password" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" placeholder="Enter Phone Number" required>
+
+        <!-- Identity Verification -->
+        <label for="identity">Upload Aadhaar/KYC Document:</label>
+        <input type="file" id="identity" accept=".pdf,.jpg,.png" required>
+
+        <!-- Terms & Conditions -->
+        <div class="terms">
+          <input type="checkbox" id="terms" required>
+          <label for="terms">I agree to the Terms & Conditions</label>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit">Sign Up</button>
+      </form>
+
+      <p>Already have an account? <a href="1stpage.html">Login here</a></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 Land Registry. All rights reserved.</p>
+  </footer>
+</body>
+</html>

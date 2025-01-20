@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Land Registration Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">LandReg<span>Chain</span></div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#dashboards">Dashboards</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about" class="about-section">
+    <h1>Welcome to LandRegChain</h1>
+    <p>
+      A blockchain-powered land registration platform that provides secure, transparent, and efficient management of property transactions. 
+      Our system integrates tools for Buyers, Sellers, and Inspectors to facilitate trust and streamline the process.
+    </p>
+  </section>
+
+  <section id="dashboards" class="dashboard-section">
+    <h2>Explore Dashboards</h2>
+    <div class="dashboard-container">
+      <div class="dashboard-card buyer" onclick="navigateTo('buyer_dashboard.html')">
+        <h3>Buyer Dashboard</h3>
+        <p>Search, browse, and buy properties seamlessly.</p>
+      </div>
+
+      <div class="dashboard-card seller" onclick="navigateTo('seller_dashboard.html')">
+        <h3>Seller Dashboard</h3>
+        <p>List and manage property sales with ease.</p>
+      </div>
+
+      <div class="dashboard-card inspector" onclick="navigateTo('L_inspector.html')">
+        <h3>Land Inspector Dashboard</h3>
+        <p>Validate and approve land ownership transparently.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact" class="footer">
+    <p>&copy; 2024 LandRegChain. All rights reserved.</p>
+    <p>
+      Contact us: <a href="mailto:info@landregchain.com">info@landregchain.com</a>
+    </p>
+  </footer>
+</body>
+</html>

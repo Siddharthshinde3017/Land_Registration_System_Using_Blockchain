@@ -1,0 +1,91 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  body {
+    background: #f4f5f7;
+    color: #333;
+  }
+  
+  header {
+    background: #2d4059;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  header .logo span {
+    color: #ea5455;
+  }
+  
+  .signup-container {
+    width: 40%;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  h1 {
+    color: #2d4059;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .terms {
+    margin-top: 15px;
+    text-align: left;
+  }
+  
+  button {
+    background: #2d4059;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  
+  button:hover {
+    background: #ea5455;
+  }
+  
+  .footer {
+    text-align: center;
+    background: #2d4059;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  
+  a {
+    color: #ea5455;
+    text-decoration: none;
+  }
+  

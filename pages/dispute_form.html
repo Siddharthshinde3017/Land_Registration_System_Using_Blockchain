@@ -1,0 +1,27 @@
+<div id="dispute-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeDisputeForm()">&times;</span>
+      <h2>Raise a Dispute</h2>
+  
+      <form id="dispute-form">
+        <label for="dispute-land-id">Land ID:</label>
+        <input type="text" id="dispute-land-id" readonly>
+  
+        <label for="dispute-issue">Issue Type:</label>
+        <select id="dispute-issue" required>
+          <option value="ownership">Ownership Conflict</option>
+          <option value="fraud">Fraudulent Transaction</option>
+          <option value="incorrect-info">Incorrect Land Information</option>
+        </select>
+  
+        <label for="dispute-description">Description:</label>
+        <textarea id="dispute-description" placeholder="Explain the issue..." required></textarea>
+  
+        <label for="dispute-document">Upload Supporting Documents:</label>
+        <input type="file" id="dispute-document" accept=".pdf,.jpg,.png">
+  
+        <button type="submit">Submit Dispute</button>
+      </form>
+    </div>
+  </div>
+  

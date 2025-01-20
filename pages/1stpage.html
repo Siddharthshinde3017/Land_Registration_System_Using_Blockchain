@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Land Management System</title>
+  <link rel="stylesheet" href="../css/1stpage.css">
+  <script defer src="../javascript/1stpage.js"></script>
+</head>
+<body>
+    <header class="header">
+      <div class="logo">Welcome to <span>LandReg</span><span1>Chain</span1></div>
+    </header>
+  
+    <main>
+      <section class="welcome-section">
+        <h1>Welcome to the Land Management System</h1>
+        <p>Login to access your dashboard.</p>
+      </section>
+  
+      <section class="login-form-section">
+        <form id="login-form">
+          <!-- Dropdown for Role Selection -->
+          <label for="role-select">Choose Your Role:</label>
+          <select id="role-select" required>
+            <option value="">Select Role</option>
+            <option value="buyer">Buyer</option>
+            <option value="seller">Seller</option>
+            <option value="inspector">Land Inspector</option>
+            <option value="admin">Admin</option>
+          </select>
+  
+          <!-- Username and Password Fields -->
+          <label for="username">Username:</label>
+          <input type="text" id="username" placeholder="Enter Username" required>
+  
+          <label for="password">Password:</label>
+          <input type="password" id="password" placeholder="Enter Password" required>
+  
+          <!-- Submit Button -->
+          <button type="submit">Login</button>
+
+           <!-- Sign-Up Button -->
+         <div class="signup-container">
+        <p>New here?</p>
+        <button id="signup-button" onclick="redirectToSignup()">Sign Up</button>
+      </div>
+        </form>
+      </section>
+    </main>
+  
+    <footer class="footer">
+      <p>&copy; 2024 Land Management System. All rights reserved.</p>
+    </footer>
+  </body>
+  </html>

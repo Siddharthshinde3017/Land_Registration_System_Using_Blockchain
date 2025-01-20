@@ -1,0 +1,140 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: #f9fafb;
+  color: #333;
+}
+
+header {
+  background: #1d3557;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+header .logo span {
+  color: #e63946;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #a8dadc;
+}
+
+.about-section {
+  padding: 50px 20px;
+  text-align: center;
+  background: #f1faee;
+}
+
+.about-section h1 {
+  font-size: 2rem;
+  color: #1d3557;
+}
+
+.about-section p {
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+.dashboard-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.dashboard-section h2 {
+  font-size: 2rem;
+  color: #1d3557;
+  margin-bottom: 30px;
+}
+
+.dashboard-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.dashboard-card {
+  width: 300px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.dashboard-card h3 {
+  color: #1d3557;
+  margin-bottom: 15px;
+}
+
+.dashboard-card p {
+  color: #555;
+}
+
+.dashboard-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.buyer {
+  border-top: 5px solid #457b9d;
+}
+
+.seller {
+  border-top: 5px solid #e63946;
+}
+
+.inspector {
+  border-top: 5px solid #2a9d8f;
+}
+
+.footer {
+  background: #1d3557;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.footer a {
+  color: #a8dadc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}

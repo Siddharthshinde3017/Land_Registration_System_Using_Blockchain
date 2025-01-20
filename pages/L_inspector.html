@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Land Inspector Dashboard</title>
+  <link rel="stylesheet" href="../css/L_inspector.css">
+  <script defer src="../javascript/L_inspector.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">Land Inspector<span>Dashboard</span></div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="dashboard.html">Home</a></li>
+        <li><a href="#pending-lands">Pending Lands</a></li>
+        <li><a href="#land-info">Land Info</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Summary Section -->
+    <section id="summary" class="summary-section">
+      <h1>Inspector Dashboard Summary</h1>
+      <div class="stats-container">
+        <div class="stat-card">
+          <h2 id="total-buyers">0</h2>
+          <p>Total Buyers</p>
+        </div>
+        <div class="stat-card">
+          <h2 id="total-sellers">0</h2>
+          <p>Total Sellers</p>
+        </div>
+        <div class="stat-card">
+          <h2 id="total-lands">0</h2>
+          <p>Total Registered Lands</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pending Lands Section -->
+    <section id="pending-lands" class="pending-lands-section">
+      <h2>Pending Land Requests</h2>
+      <table class="pending-table">
+        <thead>
+          <tr>
+            <th>Land ID</th>
+            <th>Owner Name</th>
+            <th>Location</th>
+            <th>Size (sq.ft.)</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="pending-land-data">
+          <!-- Dynamic Data Here -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Land Information Section -->
+    <section id="land-info" class="land-info-section">
+      <h2>Land Information</h2>
+      <div id="land-table-container">
+        <table class="land-table">
+          <thead>
+            <tr>
+              <th>Land ID</th>
+              <th>Owner Name</th>
+              <th>Location</th>
+              <th>Size (sq.ft.)</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="land-info-data">
+            <!-- Dynamic Data Here -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 Land Inspector Dashboard. All rights reserved.</p>
+  </footer>
+</body>
+</html>

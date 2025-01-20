@@ -1,0 +1,140 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  body {
+    background: #f4f5f7;
+    color: #333;
+  }
+  
+  header {
+    background: #2d4059;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  header .logo span {
+    color: #ea5455;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    color: #ffd460;
+  }
+  
+  .summary-section,
+  .pending-lands-section,
+  .land-info-section {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .stats-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .stat-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .stat-card h2 {
+    font-size: 2rem;
+    color: #2d4059;
+  }
+  
+  .stat-card p {
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  .pending-table,
+  .land-table {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .pending-table th,
+  .pending-table td,
+  .land-table th,
+  .land-table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .pending-table th,
+  .land-table th {
+    background: #2d4059;
+    color: #fff;
+  }
+  
+  .pending-table td button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  .pending-table td .approve {
+    background: #28a745;
+  }
+  
+  .pending-table td .reject {
+    background: #dc3545;
+  }
+  
+  .footer {
+    background: #2d4059;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+  }
+  
+  .footer p {
+    font-size: 0.9rem;
+  }
+  
