@@ -1,0 +1,90 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9fafb;
+  }
+  
+  .header {
+    background-color: #2d4059;
+    color: white;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    text-align: center;
+  }
+  
+  .nav-links li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  h2 {
+    color: #2d4059;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Profile Details */
+  .profile-details {
+    width: 50%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px #ccc;
+  }
+  
+  .profile-details p {
+    font-size: 18px;
+  }
+  
+  /* Purchased Lands Table */
+  table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  th {
+    background: #2d4059;
+    color: white;
+  }
+  
+  /* Account Management */
+  #account-management {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  button {
+    padding: 10px;
+    border: none;
+    background: #2d4059;
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  .delete-btn {
+    background: red;
+  }
+  

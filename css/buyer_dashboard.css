@@ -161,5 +161,33 @@ button {
   border-radius: 5px;
   cursor: pointer;
 }
-
+.header {
+  background-color: #2d4059;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-links li {
+  display: inline;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+.nav-links li a:hover {
+  color: #ffd460;
+}
   

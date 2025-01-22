@@ -6,16 +6,19 @@
   <title>Buyer Dashboard</title>
   <link rel="stylesheet" href="../css/buyer_dashboard.css">
   <script defer src="../javascript/buyer_dashboard.js"></script>
-  <script defer src="../javascript/dispute_form.js"></script> <!-- Ensure dispute script is linked -->
+  <script defer src="../javascript/dispute_form.js"></script>
 </head>
 <body>
+  <!-- Navigation Bar -->
   <header class="header">
     <div class="logo">Buyer <span>Dashboard</span></div>
     <nav>
       <ul class="nav-links">
-        <li><a href="advanced.html">Home</a></li>
-        <li><a href="#land-info">Land Info</a></li>
-        <li><a href="#summary">Summary</a></li>
+        <li><a href="buyer_dashboard.html">Dashboard</a></li>
+        <li><a href="buyer_profile.html">Buyer Profile</a></li>
+        <li><a href="land_gallery.html">Land Gallery</a></li>
+        <li><a href="owned_land.html">Owned Land</a></li>
+        <li><a href="approved_lands.html">View Approved Land Requests</a></li>
       </ul>
     </nav>
   </header>
@@ -25,14 +28,20 @@
     <section id="summary" class="summary-section">
       <h1>Dashboard Summary</h1>
       <div class="stats-container">
-        <div class="stat-card">
-          <h2 id="total-sellers">0</h2>
-          <p>Total Sellers</p>
-        </div>
-        <div class="stat-card">
-          <h2 id="total-lands">0</h2>
-          <p>Total Registered Lands</p>
-        </div>
+        <div class="stats-container">
+          <div class="stat-card">
+              <h2 id="total-sellers">0</h2>
+              <p>Total Sellers</p>
+              <button onclick="window.location.href='sellers.html'">View Sellers</button>
+          </div>
+      
+          <div class="stat-card">
+              <h2 id="total-lands">0</h2>
+              <p>Total Registered Lands</p>
+              <button onclick="window.location.href='lands.html'">View Lands</button>
+          </div>
+      </div>
+      
       </div>
     </section>
 
@@ -40,28 +49,63 @@
     <section id="land-info" class="land-info-section">
       <h2>Land Information</h2>
       <div id="land-table-container">
-        <table class="land-table">
-          <thead>
-            <tr>
-              <th>Land ID</th>
-              <th>Owner Name</th>
-              <th>Location</th>
-              <th>Size (sq.ft.)</th>
-              <th>Status</th>
-              <th>Action</th>
-            </tr>
-          </thead>
-          <tbody id="land-data">
-            <tr>
-              <td>101</td>
-              <td>John Doe</td>
-              <td>California, USA</td>
-              <td>1500 sq.ft.</td>
-              <td>Sold</td>
-              <td><button class="raise-dispute" onclick="openDisputeForm(101)">Raise Dispute</button></td>
-            </tr>
-          </tbody>
-        </table>
+          <table class="land-table">
+              <thead>
+                  <tr>
+                      <th>Land ID</th>
+                      <th>Owner Name</th>
+                      <th>Location</th>
+                      <th>Size (sq.ft.)</th>
+                      <th>Status</th>
+                      <th>Action</th>
+                  </tr>
+              </thead>
+              <tbody id="land-data">
+                  <tr>
+                      <td>101</td>
+                      <td>John Doe</td>
+                      <td>California, USA</td>
+                      <td>1500 sq.ft.</td>
+                      <td>Sold</td>
+                      <td><button class="raise-dispute" onclick="event.stopPropagation(); openDisputeForm(101)">Raise Dispute</button></td>
+                  </tr>
+                  <tr>
+                      <td>102</td>
+                      <td>Jane Smith</td>
+                      <td>Texas, USA</td>
+                      <td>2000 sq.ft.</td>
+                      <td>Available</td>
+                      <td><button class="raise-dispute" onclick="event.stopPropagation(); openDisputeForm(102)">Raise Dispute</button></td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+  </section>
+  
+  <script>
+      // Function to redirect to land details page
+      function redirectToDetails(landId) {
+          window.location.href = 'land-details.html?id=' + landId;
+      }
+  
+      // Function to open dispute form
+      function openDisputeForm(landId) {
+          alert("Opening dispute form for Land ID: " + landId);
+      }
+  
+      // Apply click event to all rows dynamically
+      document.addEventListener("DOMContentLoaded", function() {
+          const rows = document.querySelectorAll("#land-data tr");
+  
+          rows.forEach(row => {
+              row.addEventListener("click", function() {
+                  const landId = this.cells[0].innerText; // Get Land ID from first column
+                  redirectToDetails(landId);
+              });
+          });
+      });
+  </script>
+  
       </div>
     </section>
   </main>

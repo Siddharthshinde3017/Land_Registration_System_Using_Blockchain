@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seller Profile</title>
+  <link rel="stylesheet" href="../css/seller_profile.css">
+  <script defer src="../javascript/seller_profile.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">Seller <span>Profile</span></div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="land_gallery.html">Land Gallery</a></li>
+        <li><a href="owned_land.html">Owned Land</a></li>
+        <li><a href="approved_lands.html">View Approved Land Requests</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Seller Profile Section -->
+    <section id="profile-info">
+      <h2>My Profile</h2>
+      <div class="profile-details">
+        <p><strong>Username:</strong> <span id="username">Loading...</span></p>
+        <p><strong>Email:</strong> <span id="email">Loading...</span></p>
+        <p><strong>Phone:</strong> <span id="phone">Loading...</span></p>
+        <p><strong>Role:</strong> Seller</p>
+        <p><strong>Joined Date:</strong> <span id="joined-date">Loading...</span></p>
+      </div>
+    </section>
+
+    <!-- Listed Lands Section -->
+    <section id="listed-lands">
+      <h2>Listed Lands</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Land ID</th>
+            <th>Location</th>
+            <th>Size</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="land-data">
+          <!-- Listed lands will be loaded dynamically -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Account Management Section -->
+    <section id="account-management">
+      <h2>Account Settings</h2>
+      <button onclick="updateProfile()">Update Profile</button>
+      <button onclick="changePassword()">Change Password</button>
+      <button onclick="deleteAccount()" class="delete-btn">Delete Account</button>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 Seller Profile. All rights reserved.</p>
+  </footer>
+</body>
+</html>
